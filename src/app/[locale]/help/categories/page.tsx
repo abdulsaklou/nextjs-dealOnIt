@@ -8,8 +8,8 @@ import { Locale } from '@/i18n.config';
 import getTrans from '@/utils/translation';
 
 export const metadata: Metadata = {
-  title: 'Help Categories - Aswaq',
-  description: 'Browse all help categories on Aswaq',
+  title: 'Help Categories - DealOnIt',
+  description: 'Browse all help categories on DealOnIt',
 }
 
 // Helper function to map category slug to appropriate icon
@@ -36,10 +36,10 @@ export default async function CategoriesPage() {
   const url = (await headers()).get('x-url');
   const locale = url?.split('/')[3] as Locale;
   const t = await getTrans(locale);
-  
+
   // Fetch all categories
   const categories = await getFaqCategories();
-  
+
   // Sort categories by display_order
   const sortedCategories = [...categories].sort((a, b) => a.display_order - b.display_order);
 

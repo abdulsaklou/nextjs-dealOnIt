@@ -31,7 +31,7 @@ export async function generateMetadata(props: { params: tParams }): Promise<Meta
   const description = isArabic && listing.description_ar ? listing.description_ar : listing.description
 
   return {
-    title: `${title} | Aswaq`,
+    title: `${title} | DealOnIt`,
     description: description.slice(0, 160),
     openGraph: {
       title,

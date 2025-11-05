@@ -15,8 +15,8 @@ import { Languages } from "@/constants/enums"
 import SearchInput from "@/components/SearchInput"
 
 export const metadata: Metadata = {
-  title: "Listings | Aswaq",
-  description: "Browse all listings on Aswaq",
+  title: "Listings | DealOnIt",
+  description: "Browse all listings on DealOnIt",
 }
 
 interface SearchParams {
